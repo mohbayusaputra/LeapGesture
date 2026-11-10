@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48749102723",
+    "project_id": "leapgestureapp",
+    "storage_bucket": "leapgestureapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48749102723:android:6bcb5c1e574d2236623db6",
+        "android_client_info": {
+          "package_name": "com.example.leapgesture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm4yfb9ofFm70BE-oGNxxYqAuSHJ1BAfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

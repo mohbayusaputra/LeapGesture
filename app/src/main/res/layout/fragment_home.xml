@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main_background"
+    android:fillViewport="true"
+    tools:context=".UI.View.Home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+            <TextView
+                android:id="@+id/heroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bahasa Isyarat Indonesia"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/heroSubtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Membangun jembatan komunikasi yang inklusif untuk semua"
+                android:textColor="@android:color/white"
+                android:alpha="0.9"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/heroTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                tools:text="Halo, User"
+                android:background="@drawable/background_content_area"
+                android:backgroundTint="#FFFFFF"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="4dp"
+                android:textColor="#764ba2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/heroSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_content_area"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                android:text="Tentang Bahasa Isyarat"
+                android:textColor="#667eea"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:id="@+id/layoutTentangCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="16dp"
+                android:weightSum="3">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSejarah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="24dp"
+                        android:paddingHorizontal="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/gradient_card_tentang">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📚"
+                            android:textSize="32sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sejarah"
+                            android:layout_marginTop="8dp"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManfaat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="24dp"
+                        android:paddingHorizontal="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/gradient_card_tentang">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="💪"
+                            android:textSize="32sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manfaat"
+                            android:layout_marginTop="8dp"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKomunitas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="24dp"
+                        android:paddingHorizontal="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/gradient_card_tentang">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👥"
+                            android:textSize="32sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Komunitas"
+                            android:layout_marginTop="8dp"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                android:text="Alfabet Bahasa Isyarat"
+                android:textColor="#667eea"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <GridLayout
+                android:id="@+id/gridAlfabet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                android:columnCount="6">
+                <TextView android:text="A" style="@style/AlphabetGridItem"/><TextView android:text="B" style="@style/AlphabetGridItem"/><TextView android:text="C" style="@style/AlphabetGridItem"/><TextView android:text="D" style="@style/AlphabetGridItem"/><TextView android:text="E" style="@style/AlphabetGridItem"/><TextView android:text="F" style="@style/AlphabetGridItem"/><TextView android:text="G" style="@style/AlphabetGridItem"/><TextView android:text="H" style="@style/AlphabetGridItem"/><TextView android:text="I" style="@style/AlphabetGridItem"/><TextView android:text="J" style="@style/AlphabetGridItem"/><TextView android:text="K" style="@style/AlphabetGridItem"/><TextView android:text="L" style="@style/AlphabetGridItem"/><TextView android:text="M" style="@style/AlphabetGridItem"/><TextView android:text="N" style="@style/AlphabetGridItem"/><TextView android:text="O" style="@style/AlphabetGridItem"/><TextView android:text="P" style="@style/AlphabetGridItem"/><TextView android:text="Q" style="@style/AlphabetGridItem"/><TextView android:text="R" style="@style/AlphabetGridItem"/><TextView android:text="S" style="@style/AlphabetGridItem"/><TextView android:text="T" style="@style/AlphabetGridItem"/><TextView android:text="U" style="@style/AlphabetGridItem"/><TextView android:text="V" style="@style/AlphabetGridItem"/><TextView android:text="W" style="@style/AlphabetGridItem"/><TextView android:text="X" style="@style/AlphabetGridItem"/><TextView android:text="Y" style="@style/AlphabetGridItem"/><TextView android:text="Z" style="@style/AlphabetGridItem"/>
+            </GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Analisis &amp; Prediksi Kebutuhan Bahasa Isyarat"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#667eea"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:textAlignment="center"
+                        android:text="Untuk memahami urgensi pembelajaran BISINDO, kami menggunakan teknologi AI (*Deep Learning* dengan model LSTM) untuk memprediksi tren prevalensi gangguan pendengaran di Indonesia."/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginVertical="24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎯 Validasi Akurasi Model"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/imageValidasi"
+                        android:src="@drawable/gambar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Gambar 1: Perbandingan Data Asli vs. Prediksi"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Langkah pertama adalah memastikan model prediksi kami akurat. Grafik ini membandingkan hasil prediksi model LSTM (oranye) dengan data historis yang sebenarnya (biru)."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/background_bullet_point"
+                        android:padding="10dp"
+                        android:text="📌 Terlihat bahwa pola prediksi model sangat mendekati pola data asli."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_bullet_point"
+                        android:padding="10dp"
+                        android:text="📌 Ini menunjukkan bahwa model LSTM yang kami kembangkan dapat diandalkan."/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginVertical="24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📈 Proyeksi Masa Depan (2022-2026)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/imageForecasting"
+                        android:src="@drawable/gambar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Gambar 2: Prediksi Multi-Tahun LSTM"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Setelah model terbukti valid, kami menggunakannya untuk melakukan peramalan (forecasting) hingga tahun 2026."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/background_bullet_point"
+                        android:padding="10dp"
+                        android:text="📌 Prediksi menunjukkan tren yang cenderung stabil tinggi."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_bullet_point"
+                        android:padding="10dp"
+                        android:text="📌 Angka yang konsisten tinggi ini menandakan kebutuhan akan akses komunikasi inklusif."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                android:text="Tips Mempelajari"
+                android:textColor="#667eea"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="24dp"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/background_tips_item" android:padding="16dp" android:text="💡 Mulai dengan Alfabet" android:textColor="#333" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/background_tips_item" android:padding="16dp" android:text="💡 Praktik Konsisten" android:textColor="#333" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/background_tips_item" android:padding="16dp" android:text="💡 Bergabung dengan Komunitas" android:textColor="#333" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:background="@drawable/background_tips_item" android:padding="16dp" android:text="💡 Gunakan Ekspresi Wajah" android:textColor="#333" android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

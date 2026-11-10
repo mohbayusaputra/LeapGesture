@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/background_content_area"
+    tools:context=".UI.View.Home.InfoDialogFragment">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Informasi"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#667eea"/>
+
+    <TextView
+        android:id="@+id/dialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ini adalah isi penjelasan yang akan ditampilkan di dalam dialog. Teks ini akan diganti secara dinamis."
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:text="Tutup"/>
+
+</LinearLayout>
